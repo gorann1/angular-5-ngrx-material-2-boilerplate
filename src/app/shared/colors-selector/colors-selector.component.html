@@ -1,0 +1,21 @@
+<!-- REMOVE ME, I'M JUST A TEST -->
+<div style="padding: 20px;">
+    <mat-form-field>
+        <input matInput placeholder="Type the name" value="" [(ngModel)]="newColorLabel" required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Type the hex value" value="" [(ngModel)]="newColorValue" required>
+    </mat-form-field>
+    <button mat-icon-button color="primary" (click)="onColorInsert()">
+        <mat-icon aria-label="Add">add</mat-icon>
+    </button>
+</div>
+<div style="padding: 20px;" *ngIf="colors$ | async; let colors">
+    <ul *ngIf="colors.length > 0">
+    Your colors:
+    <li *ngFor="let color of colors">
+        <span [style.color]="color.value">{{color.label}}</span>
+    </li>
+    </ul>
+</div>
+<!-- -->

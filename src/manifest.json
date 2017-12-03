@@ -1,0 +1,13 @@
+{
+  "name": "Angular5+ ngrx Material2 Boilerplate",
+  "short_name": "Angular5+ ngrx Material2 Boilerplate",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/ngx-rocket-logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#488aff",
+  "theme_color": "#488aff"
+}
