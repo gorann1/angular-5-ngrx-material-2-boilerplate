@@ -30,11 +30,13 @@ import * as ngrx from './core/store';
 
     CoreModule,
     SharedModule,
-    AppRoutingModule,
 
     // Components modules
     HomeModule,
     AboutModule,
+
+    // Keep this after the components :-)
+    AppRoutingModule,
 
     ngrx.StoreModule.forRoot(ngrx.reducers),
     ngrx.StoreDevtoolsModule.instrument({
