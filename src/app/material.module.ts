@@ -38,6 +38,9 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTableModule,
+  MatFormFieldModule,
+  MatStepperModule,
+  MatPaginatorModule,
 } from '@angular/material';
 
 @NgModule({
@@ -75,6 +78,9 @@ import {
     MatTooltipModule,
     MatNativeDateModule,
     MatTableModule,
+    MatFormFieldModule,
+    MatStepperModule,
+    MatPaginatorModule,
   ]
 })
 export class MaterialModule { }
